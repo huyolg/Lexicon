@@ -8,6 +8,7 @@
 
 #import "homeViewController.h"
 #import "UIBarButtonItem+Extend.h"
+#import "PlayingViewController.h"
 
 @interface homeViewController ()
 {
@@ -20,13 +21,20 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-//    self.view.backgroundColor = [UIColor orangeColor];
+
     isPlaying = NO;
     self.navigationItem.rightBarButtonItem = [UIBarButtonItem itemWithIcon:@"play" target:self action:@selector(showPlayingView)];
 }
 
 - (void)showPlayingView
 {
+    PlayingViewController *playingVC = [[PlayingViewController alloc]init];
+    playingVC.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
+//    playingVC.modalPresentationStyle = UIModalPresentationOverFullScreen;
+    [self presentViewController:playingVC animated:YES completion:^{
+        nil;
+//        playingVC.view.backgroundColor = [UIColor orangeColor];
+    }];
     if (!isPlaying) {
         self.navigationItem.rightBarButtonItem = [UIBarButtonItem itemWithIcon:@"playing" target:self action:@selector(showPlayingView)];
     }else {

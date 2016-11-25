@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0508AE671DE82ED0000393CC /* PlayingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0508AE661DE82ED0000393CC /* PlayingViewController.m */; };
 		052242CF1DDECBD000B86E26 /* UIView+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = 052242CE1DDECBD000B86E26 /* UIView+Extend.m */; };
 		052242F01DDEE64C00B86E26 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = 052242EF1DDEE64C00B86E26 /* UIColor+Hex.m */; };
 		052242F51DDEED2700B86E26 /* HYLTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 052242F21DDEED2700B86E26 /* HYLTabBar.m */; };
@@ -59,6 +60,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0508AE651DE82ED0000393CC /* PlayingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayingViewController.h; sourceTree = "<group>"; };
+		0508AE661DE82ED0000393CC /* PlayingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayingViewController.m; sourceTree = "<group>"; };
 		052242CD1DDECBD000B86E26 /* UIView+Extend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extend.h"; sourceTree = "<group>"; };
 		052242CE1DDECBD000B86E26 /* UIView+Extend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extend.m"; sourceTree = "<group>"; };
 		052242EE1DDEE64C00B86E26 /* UIColor+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex.h"; sourceTree = "<group>"; };
@@ -317,6 +320,8 @@
 		056DC6D51DDDB48A003BAB62 /* 播放 */ = {
 			isa = PBXGroup;
 			children = (
+				0508AE651DE82ED0000393CC /* PlayingViewController.h */,
+				0508AE661DE82ED0000393CC /* PlayingViewController.m */,
 			);
 			path = "播放";
 			sourceTree = "<group>";
@@ -590,6 +595,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0588B75B1DDDA0710047D786 /* ViewController.m in Sources */,
+				0508AE671DE82ED0000393CC /* PlayingViewController.m in Sources */,
 				052243251DDF028D00B86E26 /* MASViewConstraint.m in Sources */,
 				052242FC1DDEF18500B86E26 /* homeViewController.m in Sources */,
 				052243211DDF028D00B86E26 /* MASConstraint.m in Sources */,
